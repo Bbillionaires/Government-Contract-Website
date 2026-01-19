@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- SHORT STEP 1: SEO + Schema -->
+  <title>Government Contracting Subscriptions | Win More Bids &amp; Grants</title>
+  <meta name="description" content="Done-for-you contracting &amp; grant submissions on a 30–60 day cadence. Pipeline research, compliance docs, proposal writing, and post-award support.">
+  <link rel="canonical" href="https://yourdomain.com/government-contracting-services">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Government Contracting Subscriptions — Win More Bids &amp; Grants">
+  <meta property="og:description" content="We build your pipeline, prepare compliance docs, write bids, and submit on time. Choose a plan built for wins.">
+  <meta property="og:url" content="https://yourdomain.com/government-contracting-services">
+  <meta property="og:image" content="https://yourdomain.com/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Government Contracting Subscriptions — Win More Bids &amp; Grants">
+  <meta name="twitter:description" content="30–60 day submission rhythm across Government, Commercial, and Residential opportunities.">
+  <meta name="twitter:image" content="https://yourdomain.com/og.jpg">
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Service",
+      "name":"Government Contract & Grant Submission",
+      "description":"Done-for-you pipeline research, compliance prep, proposal writing, and submissions on a 30–60 day cadence.",
+      "areaServed":"US",
+      "provider":{"@type":"Organization","name":"Your Company Name","url":"https://yourdomain.com"},
+      "offers":[
+        {"@type":"Offer","name":"Tier 1 — Starter","price":"199","priceCurrency":"USD","description":"15% on wins; perpetual exclusivity"},
+        {"@type":"Offer","name":"Tier 2 — Growth","price":"499","priceCurrency":"USD","description":"12% on wins; 3-year exclusivity"},
+        {"@type":"Offer","name":"Tier 3 — Premium","price":"1499","priceCurrency":"USD","description":"9% on wins; 1-year exclusivity"},
+        {"@type":"Offer","name":"Tier 4 — Enterprise","price":"10000","priceCurrency":"USD","description":"3% on wins; non-exclusive; partner rewards"}
+      ]
+    }
+    </script>
+  <script type="application/ld+json" id="faq-schema">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"How often do you submit?","acceptedAnswer":{"@type":"Answer","text":"We operate on a 30–60 day cadence. A deliverable may be a compliant submission or a verified referral (Government, Commercial, or Residential)."}},
+        {"@type":"Question","name":"What's included in each plan?","acceptedAnswer":{"@type":"Answer","text":"Pipeline research & matching, document checklist and compliance prep, proposal drafting, submission & portal navigation, and post-submission follow-up."}},
+        {"@type":"Question","name":"How do commissions & exclusivity work?","acceptedAnswer":{"@type":"Answer","text":"Tier 1: 15% + perpetual; Tier 2: 12% + 3 yrs; Tier 3: 9% + 1 yr; Tier 4: 3% non-exclusive with partner rewards (10% monthly + 10% of consultant's commission on wins for sourced clients)."}}
+      ]
+    }
+    </script><!-- /SHORT STEP 1 -->
+  <script src="/_sdk/data_sdk.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+        .loading-spinner {
+            border: 3px solid #f3f4f6;
+            border-top: 3px solid #3b82f6;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #10b981;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            z-index: 1000;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+        .toast.show {
+            transform: translateX(0);
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+ </head>
+ <body class="min-h-full">
+  <div class="gradient-bg min-h-full"><!-- Header Section -->
+   <header class="text-center py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+     <h1 id="main-headline" class="text-4xl md:text-6xl font-bold text-white mb-6">Win Government Contracts with Expert Guidance</h1>
+     <p id="subheadline" class="text-xl md:text-2xl text-blue-100 mb-8">Professional bid submission services for county, city, state, and federal grants</p><button id="cta-button" class="bg-white text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg"> Get Your Free Consultation </button>
+    </div>
+   </header><!-- Video Section -->
+   <section class="py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+     <div class="bg-white rounded-2xl p-8 card-shadow">
+      <h2 id="video-title" class="text-3xl font-bold text-gray-900 text-center mb-8">Meet Your Government Contracting Expert</h2>
+      <div id="video-container" class="video-container mb-8">
+       <div class="absolute inset-0 bg-gray-200 rounded-lg flex items-center justify-center">
+        <div class="text-center">
+         <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 20 20"><path d="M8 5v10l8-5-8-5z" />
+          </svg>
+         </div>
+         <p class="text-gray-600">Video will appear here when embed code is added</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Consultant Profile Section -->
+   <section class="py-16 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Your Expert Consultant</h2>
+      <p class="text-xl text-gray-600">Proven track record in government contracting success</p>
+     </div>
+     <div class="bg-gray-50 rounded-2xl p-8 card-shadow">
+      <div class="grid md:grid-cols-2 gap-8">
+       <div>
+        <h3 class="text-2xl font-bold text-blue-900 mb-4">Deborah K. Thompson</h3>
+        <div class="space-y-4 text-gray-700">
+         <p class="font-semibold">Recent graduate of the Small Business Administration (SBA) 8(a) program—2023</p>
+         <p>Degreed Professional from the University of Minneapolis. Goal-focused, highly qualified Consultant with proven expertise in developing opportunities for small and disadvantaged businesses seeking federal, state, or local government contracts.</p>
+         <p>Effectively managed simultaneous FAA contracts, matched government agency requirements with clients' capabilities to perform as prime or subcontractors, then assisted them to prepare realistic proposals.</p>
+        </div>
+       </div>
+       <div>
+        <h4 class="text-xl font-bold text-blue-900 mb-4">Core Expertise</h4>
+        <div class="grid grid-cols-2 gap-2 text-sm">
+         <div class="bg-white p-3 rounded-lg">
+          Contract Administration
+         </div>
+         <div class="bg-white p-3 rounded-lg">
+          Small Business Development
+         </div>
+         <div class="bg-white p-3 rounded-lg">
+          FAR Compliance
+         </div>
+         <div class="bg-white p-3 rounded-lg">
+          Strategic Planning
+         </div>
+         <div class="bg-white p-3 rounded-lg">
+          Cost/Benefit Analysis
+         </div>
+         <div class="bg-white p-3 rounded-lg">
+          Budget Control
+         </div>
+         <div class="bg-white p-3 rounded-lg">
+          Client Relations
+         </div>
+         <div class="bg-white p-3 rounded-lg">
+          Training &amp; Development
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-200">
+       <h4 class="text-xl font-bold text-blue-900 mb-4">Comprehensive Experience Portfolio</h4>
+       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+        <div class="bg-white p-4 rounded-lg">
+         <h5 class="font-semibold text-blue-800 mb-2">Acquisition &amp; Proposal Management</h5>
+         <p class="text-gray-600">Analyze federal, state, and local government procurement requirements. Assist with bid preparation, subcontracting plans, and technical proposals while maintaining strict deadlines.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg">
+         <h5 class="font-semibold text-blue-800 mb-2">Contract &amp; Category Management</h5>
+         <p class="text-gray-600">Principal adviser for contractual issues, performance assessments, and System for Award Management tracking. Collaborate with architects and engineers on construction projects.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg">
+         <h5 class="font-semibold text-blue-800 mb-2">Claims Management</h5>
+         <p class="text-gray-600">Provide expert advice on general liability and workers' compensation claims. Coordinate legal assistance to resolve issues between clients, employees, and insurance carriers.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg">
+         <h5 class="font-semibold text-blue-800 mb-2">GSA Federal Supply Schedule</h5>
+         <p class="text-gray-600">Identify GSA schedule opportunities and guide clients through the process for education, training, transportation, and logistical support services.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg">
+         <h5 class="font-semibold text-blue-800 mb-2">Education &amp; Training Services</h5>
+         <p class="text-gray-600">Management and technical assistance, workforce development, counseling, and coaching. Community outreach for innovative, technological, and environmental solutions.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg">
+         <h5 class="font-semibold text-blue-800 mb-2">Program Development</h5>
+         <p class="text-gray-600">Construction and business development, housing and economic development. Advocate and collaborate with government officials to achieve mandated small, minority, and women participation goals.</p>
+        </div>
+       </div>
+       <div class="mt-6 bg-blue-50 p-6 rounded-lg">
+        <h5 class="font-semibold text-blue-900 mb-3">Specialized Training &amp; Development</h5>
+        <p class="text-gray-700">Trains and develops cohorts of small business operators in construction, housing, and transportation industries to gain self-sufficiency through government contracting. Works directly with elected and appointed government officials and citizens groups to bring large building and road construction projects into communities.</p>
+       </div>
+       <div class="mt-6">
+        <h5 class="font-semibold text-blue-900 mb-4">Major Project Experience &amp; Grant Administration</h5>
+        <div class="space-y-4 text-sm">
+         <div class="bg-white p-4 rounded-lg border-l-4 border-emerald-500">
+          <h6 class="font-semibold text-emerald-800 mb-2">Congressional District Leadership</h6>
+          <p class="text-gray-700 mb-2"><strong>Congresswoman Corrine Brown, Florida District 3 (1999-2000) - Area Director</strong></p>
+          <p class="text-gray-700">Coordinated congressional casework for federally funded community, business, and economic development projects. Managed for-profit and non-profit contracting activities, arranged economic development summits, and announced GSA procurement opportunities including federal courthouse construction, AIDS/HIV grants, CDBG-HUD NOFAs, and Veterans Administration funding.</p>
+         </div>
+         <div class="bg-white p-4 rounded-lg border-l-4 border-blue-500">
+          <h6 class="font-semibold text-blue-800 mb-2">Statewide Transportation Program</h6>
+          <p class="text-gray-700 mb-2"><strong>Florida A&amp;M University SBDC FDOT CMDP/BGP (1994-1999) - Program Director</strong></p>
+          <p class="text-gray-700">Administered over $4 million in statewide funding over four years to assist small and disadvantaged businesses with road and bridge construction contracts throughout Florida's seven districts. Expert in 49 CFR 26 compliance for small disadvantaged and women-owned businesses in construction.</p>
+         </div>
+         <div class="bg-white p-4 rounded-lg border-l-4 border-indigo-500">
+          <h6 class="font-semibold text-indigo-800 mb-2">City of Jacksonville Grant Management</h6>
+          <p class="text-gray-700 mb-2"><strong>COJ Public Service Grant: $200,000 annually for 7 years ($1.4M total)</strong></p>
+          <p class="text-gray-700">Administered major city grant programs including $26,000 annual FreshMinistries Economic Development-Business Façade Grant, state Workforce Development grants, and SBA micro-loan program approving 10+ loans to small companies. Grew chamber membership to over 300 members.</p>
+         </div>
+         <div class="bg-white p-4 rounded-lg border-l-4 border-green-500">
+          <h6 class="font-semibold text-green-800 mb-2">HUD Housing &amp; Community Development</h6>
+          <p class="text-gray-700 mb-2"><strong>City of Jacksonville HUD (1992-1994) - Program Director/Grants Writer</strong></p>
+          <p class="text-gray-700">Wrote and secured over $500,000 in grant funds for public housing developments. Managed HOPE I, Drug Elimination Grants, and Youth Opportunity programs. Developed 501(c)(3) resident-controlled organizations for fund management.</p>
+         </div>
+         <div class="bg-white p-4 rounded-lg border-l-4 border-purple-500">
+          <h6 class="font-semibold text-purple-800 mb-2">Turner Construction - Duval County Courthouse</h6>
+          <p class="text-gray-700">JSEB Outreach Coordinator managing compliance for 25+ JSEBs during the three-year Unified Court House Facility project. Company name permanently displayed on first-floor elevator plaque recognizing project participants.</p>
+         </div>
+         <div class="bg-white p-4 rounded-lg border-l-4 border-orange-500">
+          <h6 class="font-semibold text-orange-800 mb-2">Small Business Investment &amp; Lending</h6>
+          <p class="text-gray-700 mb-2"><strong>First Coast Black Business Investment Corp (1989-1990) - Loan Specialist</strong></p>
+          <p class="text-gray-700">Marketed $1M annual loan pool for small disadvantaged Black businesses in Jacksonville. Managed funds appropriated through Florida Legislature and raised from local banking institutions.</p>
+         </div>
+         <div class="bg-white p-4 rounded-lg border-l-4 border-red-500">
+          <h6 class="font-semibold text-red-800 mb-2">Transportation Infrastructure Projects</h6>
+          <p class="text-gray-700">Teamed with Parsons Brinkerhoff Quade and Douglas, Jacobs Edwards and Kelcey, and Reynold Smith and Hills Engineering on Jacksonville Transportation Authority surface transportation projects as Community Outreach Officer.</p>
+         </div>
+        </div>
+        <div class="mt-6">
+         <h5 class="font-semibold text-blue-900 mb-4">Early Career Foundation &amp; Community Development</h5>
+         <div class="space-y-4 text-sm">
+          <div class="bg-white p-4 rounded-lg border-l-4 border-teal-500">
+           <h6 class="font-semibold text-teal-800 mb-2">Jacksonville Urban League - Economic Development (1987-1989)</h6>
+           <p class="text-gray-700 mb-2"><strong>Program Director</strong></p>
+           <p class="text-gray-700">Administered citywide small business loan program for Black and disadvantaged business owners. Collaborated with City of Jacksonville and independent authorities on purchasing and procurement opportunities. Served on advisory and purchasing councils to develop unified minority certification processes for subcontractor and prime contractor opportunities.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border-l-4 border-amber-500">
+           <h6 class="font-semibold text-amber-800 mb-2">Professional Real Estate Investment (1982-1984)</h6>
+           <p class="text-gray-700 mb-2"><strong>Professional Investors, Inc./MLS Investment Corporation - Co-Owner</strong></p>
+           <p class="text-gray-700">Co-owned family real estate investment company. Purchased, rehabilitated, repaired, managed, and sold residential properties throughout Jacksonville, gaining hands-on experience in property development and management.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border-l-4 border-rose-500">
+           <h6 class="font-semibold text-rose-800 mb-2">Historic Preservation Leadership (1980-1982)</h6>
+           <p class="text-gray-700 mb-2"><strong>Old Stanton, Inc. - Program Director</strong></p>
+           <p class="text-gray-700">Established IRS 501(c)(3) status and managed restoration/construction projects for historic educational institution. Successfully placed institution on National and Florida Historic Registers, securing preservation funding eligibility. Developed comprehensive fundraising campaigns through grants, donations, and alumni contributions.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border-l-4 border-cyan-500">
+           <h6 class="font-semibold text-cyan-800 mb-2">Community Development &amp; Non-Profit Formation</h6>
+           <p class="text-gray-700 mb-2"><strong>Jacksonville Neighborhood Resource Center - Program Director</strong></p>
+           <p class="text-gray-700">Marketed citywide community development programs to low-to-moderate income residents. Organized neighborhood groups into formal 501(c)(3) organizations, making them eligible for government grants. Trained boards of directors on federal funding cycles and served as fiscal agent for multiple organizations.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border-l-4 border-violet-500">
+           <h6 class="font-semibold text-violet-800 mb-2">National Housing Counseling Program (1974-1979)</h6>
+           <p class="text-gray-700 mb-2"><strong>Jacksonville Urban League Housing Counseling - Program Director (4.5 years)</strong></p>
+           <p class="text-gray-700">Directed citywide counseling program covering mortgage financing, foreclosure prevention, pre-purchase counseling, and housing rehabilitation. <strong>Increased program funding from $20,000 to $100,000</strong> and counseled over 3,000 homeowners. Developed nationally recognized training policies and manuals, training HUD-approved agencies across Florida, California, New Mexico, and Connecticut.</p>
+          </div>
+         </div>
+        </div>
+        <div class="mt-6 bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border border-blue-200">
+         <h6 class="font-bold text-blue-900 mb-3">Total Career Impact: 50+ Years of Government Contracting Excellence</h6>
+         <div class="grid md:grid-cols-2 gap-4 text-sm">
+          <div>
+           <p class="font-semibold text-blue-800">Direct Grant &amp; Program Administration:</p>
+           <ul class="text-gray-700 mt-1 space-y-1">
+            <li>• $7M+ Total Funding Managed</li>
+            <li>• $4M+ FDOT Statewide Transportation Program</li>
+            <li>• $1.4M+ COJ Public Service Grants (7 years)</li>
+            <li>• $500K+ HUD Housing &amp; Community Development</li>
+            <li>• $1M+ Small Business Loan Programs</li>
+            <li>• 3,000+ Homeowners Counseled</li>
+            <li>• 500% Funding Growth (Housing Program)</li>
+           </ul>
+          </div>
+          <div>
+           <p class="font-semibold text-blue-800">Specialized Expertise &amp; Leadership:</p>
+           <ul class="text-gray-700 mt-1 space-y-1">
+            <li>• Congressional District Coordination</li>
+            <li>• 49 CFR 26 Compliance Expert</li>
+            <li>• Multiple 501(c)(3) Organization Development</li>
+            <li>• National Training Program Development</li>
+            <li>• Historic Preservation &amp; National Registry</li>
+            <li>• Multi-State Agency Training (4 states)</li>
+            <li>• Real Estate Investment &amp; Development</li>
+           </ul>
+          </div>
+         </div>
+         <div class="mt-4 pt-4 border-t border-blue-200">
+          <p class="text-center text-blue-800 font-semibold">Career Span: 1974-2023 | Continuous Government Contracting &amp; Grant Management Excellence</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Pricing Tiers Section -->
+   <section class="py-16 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+     <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Choose Your Success Plan</h2>
+      <p class="text-xl text-gray-600">Transparent pricing with performance-based rewards and dedicated service levels</p>
+     </div>
+     <div class="grid lg:grid-cols-4 gap-6"><!-- Tier 1 - Starter -->
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 border-2 border-blue-200 relative">
+       <div class="text-center mb-6">
+        <h3 class="text-xl font-bold text-blue-900 mb-2">Tier 1 — Starter</h3>
+        <div class="text-3xl font-bold text-blue-600 mb-1">
+         $199
+        </div>
+        <div class="text-sm text-gray-600">
+         per month + 15%
+        </div>
+       </div>
+       <div class="space-y-3 mb-6">
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Commission Rate
+         </div>
+         <div class="text-blue-600 font-bold">
+          15% on wins
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Funding Fee
+         </div>
+         <div class="text-blue-600 font-bold">
+          7% per funding event
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Exclusivity
+         </div>
+         <div class="text-blue-600 font-bold">
+          Perpetual
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Active Projects
+         </div>
+         <div class="text-blue-600 font-bold">
+          1–2 projects
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Submission Cadence
+         </div>
+         <div class="text-blue-600 font-bold">
+          1 every 60 days
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Annual Output
+         </div>
+         <div class="text-blue-600 font-bold">
+          ~6 per year
+         </div>
+        </div>
+       </div>
+       <div class="bg-blue-50 p-3 rounded-lg mb-4">
+        <div class="text-xs text-blue-800 font-semibold mb-1">
+         Service Focus:
+        </div>
+        <div class="text-xs text-blue-700">
+         Light engagement, starter clients, templated proposals
+        </div>
+       </div>
+       <div class="text-center"><button class="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-sm"> Get Started </button>
+       </div>
+      </div><!-- Tier 2 - Growth -->
+      <div class="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-6 border-2 border-emerald-200 relative">
+       <div class="text-center mb-6">
+        <h3 class="text-xl font-bold text-emerald-900 mb-2">Tier 2 — Growth</h3>
+        <div class="text-3xl font-bold text-emerald-600 mb-1">
+         $499
+        </div>
+        <div class="text-sm text-gray-600">
+         per month + 12%
+        </div>
+       </div>
+       <div class="space-y-3 mb-6">
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Commission Rate
+         </div>
+         <div class="text-emerald-600 font-bold">
+          12% on wins
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Funding Fee
+         </div>
+         <div class="text-emerald-600 font-bold">
+          5% per funding event
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Exclusivity
+         </div>
+         <div class="text-emerald-600 font-bold">
+          3 years
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Active Projects
+         </div>
+         <div class="text-emerald-600 font-bold">
+          2–3 projects
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Submission Cadence
+         </div>
+         <div class="text-emerald-600 font-bold">
+          1 every 30–45 days
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Annual Output
+         </div>
+         <div class="text-emerald-600 font-bold">
+          ~8–12 per year
+         </div>
+        </div>
+       </div>
+       <div class="bg-emerald-50 p-3 rounded-lg mb-4">
+        <div class="text-xs text-emerald-800 font-semibold mb-1">
+         Service Focus:
+        </div>
+        <div class="text-xs text-emerald-700">
+         Balanced tier, moderate hand-holding, semi-custom proposals
+        </div>
+       </div>
+       <div class="text-center"><button class="w-full bg-emerald-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-emerald-700 transition-colors text-sm"> Get Started </button>
+       </div>
+      </div><!-- Tier 3 - Premium -->
+      <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 border-2 border-purple-200 relative">
+       <div class="absolute -top-3 left-1/2 transform -translate-x-1/2"><span class="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold">POPULAR</span>
+       </div>
+       <div class="text-center mb-6">
+        <h3 class="text-xl font-bold text-purple-900 mb-2">Tier 3 — Premium</h3>
+        <div class="text-3xl font-bold text-purple-600 mb-1">
+         $1,499
+        </div>
+        <div class="text-sm text-gray-600">
+         per month + 9%
+        </div>
+       </div>
+       <div class="space-y-3 mb-6">
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Commission Rate
+         </div>
+         <div class="text-purple-600 font-bold">
+          9% on wins
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Funding Fee
+         </div>
+         <div class="text-purple-600 font-bold">
+          3% per funding event
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Exclusivity
+         </div>
+         <div class="text-purple-600 font-bold">
+          1 year
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Active Projects
+         </div>
+         <div class="text-purple-600 font-bold">
+          3–5 projects
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Submission Cadence
+         </div>
+         <div class="text-purple-600 font-bold">
+          2 every 30–45 days
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Annual Output
+         </div>
+         <div class="text-purple-600 font-bold">
+          ~18–24 per year
+         </div>
+        </div>
+       </div>
+       <div class="bg-purple-50 p-3 rounded-lg mb-4">
+        <div class="text-xs text-purple-800 font-semibold mb-1">
+         Service Focus:
+        </div>
+        <div class="text-xs text-purple-700">
+         High-touch clients, specialized grants &amp; contracts
+        </div>
+       </div>
+       <div class="text-center"><button class="w-full bg-purple-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-purple-700 transition-colors text-sm"> Get Started </button>
+       </div>
+      </div><!-- Tier 4 - Enterprise -->
+      <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 border-2 border-amber-200 relative">
+       <div class="text-center mb-6">
+        <h3 class="text-xl font-bold text-amber-900 mb-2">Tier 4 — Enterprise</h3>
+        <div class="text-3xl font-bold text-amber-600 mb-1">
+         $10,000
+        </div>
+        <div class="text-sm text-gray-600">
+         per month + 3%
+        </div>
+       </div>
+       <div class="space-y-3 mb-6">
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Commission Rate
+         </div>
+         <div class="text-amber-600 font-bold">
+          3% on wins
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Funding Fee
+         </div>
+         <div class="text-amber-600 font-bold">
+          1.5% per funding event
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Exclusivity
+         </div>
+         <div class="text-amber-600 font-bold">
+          Non-exclusive
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Active Projects
+         </div>
+         <div class="text-amber-600 font-bold">
+          5–8+ projects
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Submission Cadence
+         </div>
+         <div class="text-amber-600 font-bold">
+          4–6 every 30 days
+         </div>
+        </div>
+        <div class="bg-white p-3 rounded-lg">
+         <div class="font-semibold text-gray-900 text-sm">
+          Annual Output
+         </div>
+         <div class="text-amber-600 font-bold">
+          ~60+ per year
+         </div>
+        </div>
+       </div>
+       <div class="bg-amber-50 p-3 rounded-lg mb-4">
+        <div class="text-xs text-amber-800 font-semibold mb-1">
+         Service Focus:
+        </div>
+        <div class="text-xs text-amber-700">
+         Institutional, agency-level, team-based automation
+        </div>
+       </div>
+       <div class="text-center"><button class="w-full bg-amber-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-amber-700 transition-colors text-sm"> Get Started </button>
+       </div>
+      </div>
+     </div><!-- What's Included Section -->
+     <div class="mt-16 bg-gray-50 rounded-2xl p-8">
+      <h3 class="text-2xl font-bold text-gray-900 text-center mb-8">What's Included in Every Plan</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+       <div class="text-center">
+        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+         </svg>
+        </div>
+        <h4 class="font-semibold text-gray-900 mb-2">Pipeline Research</h4>
+        <p class="text-sm text-gray-600">Comprehensive opportunity identification and matching</p>
+       </div>
+       <div class="text-center">
+        <div class="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg>
+        </div>
+        <h4 class="font-semibold text-gray-900 mb-2">Compliance Prep</h4>
+        <p class="text-sm text-gray-600">Document checklist and regulatory compliance</p>
+       </div>
+       <div class="text-center">
+        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+         </svg>
+        </div>
+        <h4 class="font-semibold text-gray-900 mb-2">Proposal Writing</h4>
+        <p class="text-sm text-gray-600">Professional bid drafting and optimization</p>
+       </div>
+       <div class="text-center">
+        <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+         </svg>
+        </div>
+        <h4 class="font-semibold text-gray-900 mb-2">Submission &amp; Follow-up</h4>
+        <p class="text-sm text-gray-600">Portal navigation and post-submission support</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Form Section -->
+   <section class="py-16 px-4">
+    <div class="max-w-2xl mx-auto">
+     <div class="bg-white rounded-2xl p-8 card-shadow">
+      <h2 id="contact-form-title" class="text-3xl font-bold text-gray-900 text-center mb-8">Ready to Win Your Next Contract?</h2>
+      <form id="contact-form" class="space-y-6">
+       <div class="grid md:grid-cols-2 gap-6">
+        <div><label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label> <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div><label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label> <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+       </div>
+       <div class="grid md:grid-cols-2 gap-6">
+        <div><label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label> <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div><label for="business-type" class="block text-sm font-medium text-gray-700 mb-2">Business Type</label> <select id="business-type" name="business-type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"> <option value="">Select Business Type</option> <option value="construction">Construction</option> <option value="transportation">Transportation</option> <option value="consulting">Consulting</option> <option value="technology">Technology</option> <option value="other">Other</option> </select>
+        </div>
+       </div>
+       <div><label for="project-details" class="block text-sm font-medium text-gray-700 mb-2">Project Details</label> <textarea id="project-details" name="project-details" rows="4" placeholder="Tell us about your project and contracting goals..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+       </div><button type="submit" id="submit-button" class="w-full bg-blue-600 text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center"> <span id="submit-text">Get My Free Consultation</span>
+        <div id="submit-spinner" class="loading-spinner ml-2 hidden"></div></button>
+      </form>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="py-8 px-4 text-center text-blue-100">
+    <div class="max-w-4xl mx-auto">
+     <p class="mb-2">Deborah K. Thompson, Consultants | Jacksonville, FL</p>
+     <p class="text-sm opacity-75 mb-2">Professional government contracting services since 1986</p>
+     <p class="text-sm"><a href="https://yourdomain.com/government-contracting-services" target="_blank" rel="noopener noreferrer" class="text-blue-200 hover:text-white underline"> yourdomain.com/government-contracting-services </a></p>
+    </div>
+   </footer>
+  </div><!-- Toast Notification -->
+  <div id="toast" class="toast"><span id="toast-message"></span>
+  </div>
+  <script>
+        // Configuration object
+        const defaultConfig = {
+            main_headline: "Win Government Contracts with Expert Guidance",
+            subheadline: "Professional bid submission services for county, city, state, and federal grants",
+            video_title: "Meet Your Government Contracting Expert",
+            video_embed_code: "",
+            cta_button_text: "Get Your Free Consultation",
+            contact_form_title: "Ready to Win Your Next Contract?",
+            primary_color: "#3b82f6",
+            secondary_color: "#1e3a8a",
+            accent_color: "#ffffff",
+            text_color: "#1f2937",
+            surface_color: "#f8fafc"
+        };
+
+        let currentData = [];
+        let isLoading = false;
+
+        // Data SDK Handler
+        const dataHandler = {
+            onDataChanged(data) {
+                currentData = data;
+                console.log(`Stored ${data.length} consultation requests`);
+            }
+        };
+
+        // Element SDK Implementation
+        async function onConfigChange(config) {
+            // Update text content
+            document.getElementById('main-headline').textContent = config.main_headline || defaultConfig.main_headline;
+            document.getElementById('subheadline').textContent = config.subheadline || defaultConfig.subheadline;
+            document.getElementById('video-title').textContent = config.video_title || defaultConfig.video_title;
+            document.getElementById('cta-button').textContent = config.cta_button_text || defaultConfig.cta_button_text;
+            document.getElementById('contact-form-title').textContent = config.contact_form_title || defaultConfig.contact_form_title;
+
+            // Update video embed
+            const videoContainer = document.getElementById('video-container');
+            const embedCode = config.video_embed_code || defaultConfig.video_embed_code;
+            
+            if (embedCode.trim()) {
+                videoContainer.innerHTML = embedCode;
+            } else {
+                videoContainer.innerHTML = `
+                    <div class="absolute inset-0 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M8 5v10l8-5-8-5z"/>
+                                </svg>
+                            </div>
+                            <p class="text-gray-600">Video will appear here when embed code is added</p>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Update colors
+            const primaryColor = config.primary_color || defaultConfig.primary_color;
+            const secondaryColor = config.secondary_color || defaultConfig.secondary_color;
+            const accentColor = config.accent_color || defaultConfig.accent_color;
+            const textColor = config.text_color || defaultConfig.text_color;
+            const surfaceColor = config.surface_color || defaultConfig.surface_color;
+
+            // Apply colors to elements
+            document.querySelector('.gradient-bg').style.background = `linear-gradient(135deg, ${secondaryColor} 0%, ${primaryColor} 100%)`;
+            document.getElementById('cta-button').style.backgroundColor = accentColor;
+            document.getElementById('cta-button').style.color = secondaryColor;
+            document.getElementById('submit-button').style.backgroundColor = primaryColor;
+            document.querySelectorAll('.bg-white').forEach(el => {
+                if (!el.closest('.bg-gray-50')) {
+                    el.style.backgroundColor = surfaceColor;
+                }
+            });
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.primary_color || defaultConfig.primary_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ primary_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.secondary_color || defaultConfig.secondary_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ secondary_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.accent_color || defaultConfig.accent_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ accent_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.text_color || defaultConfig.text_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ text_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.surface_color || defaultConfig.surface_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ surface_color: value });
+                            }
+                        }
+                    }
+                ],
+                borderables: [],
+                fontEditable: undefined,
+                fontSizeable: undefined
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["main_headline", config.main_headline || defaultConfig.main_headline],
+                ["subheadline", config.subheadline || defaultConfig.subheadline],
+                ["video_title", config.video_title || defaultConfig.video_title],
+                ["video_embed_code", config.video_embed_code || defaultConfig.video_embed_code],
+                ["cta_button_text", config.cta_button_text || defaultConfig.cta_button_text],
+                ["contact_form_title", config.contact_form_title || defaultConfig.contact_form_title]
+            ]);
+        }
+
+        // Form submission handler
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            if (isLoading) return;
+            
+            // Check data limit
+            if (currentData.length >= 999) {
+                showToast("Maximum limit of 999 consultation requests reached. Please contact support.", "error");
+                return;
+            }
+
+            isLoading = true;
+            updateSubmitButton(true);
+
+            const formData = new FormData(event.target);
+            const consultationRequest = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone') || '',
+                business_type: formData.get('business-type') || '',
+                project_details: formData.get('project-details') || '',
+                submitted_at: new Date().toISOString()
+            };
+
+            try {
+                const result = await window.dataSdk.create(consultationRequest);
+                
+                if (result.isOk) {
+                    showToast("Thank you! Your consultation request has been submitted successfully.", "success");
+                    event.target.reset();
+                } else {
+                    showToast("There was an error submitting your request. Please try again.", "error");
+                }
+            } catch (error) {
+                showToast("There was an error submitting your request. Please try again.", "error");
+            } finally {
+                isLoading = false;
+                updateSubmitButton(false);
+            }
+        }
+
+        function updateSubmitButton(loading) {
+            const submitText = document.getElementById('submit-text');
+            const submitSpinner = document.getElementById('submit-spinner');
+            const submitButton = document.getElementById('submit-button');
+            
+            if (loading) {
+                submitText.textContent = 'Submitting...';
+                submitSpinner.classList.remove('hidden');
+                submitButton.disabled = true;
+                submitButton.classList.add('opacity-75');
+            } else {
+                submitText.textContent = 'Get My Free Consultation';
+                submitSpinner.classList.add('hidden');
+                submitButton.disabled = false;
+                submitButton.classList.remove('opacity-75');
+            }
+        }
+
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            
+            toastMessage.textContent = message;
+            toast.style.backgroundColor = type === 'success' ? '#10b981' : '#ef4444';
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+        }
+
+        // Scroll to form when CTA button is clicked
+        function scrollToForm() {
+            document.getElementById('contact-form').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Initialize application
+        async function initializeApp() {
+            try {
+                // Initialize Data SDK
+                if (window.dataSdk) {
+                    const initResult = await window.dataSdk.init(dataHandler);
+                    if (!initResult.isOk) {
+                        console.error("Failed to initialize data SDK");
+                    }
+                }
+
+                // Initialize Element SDK
+                if (window.elementSdk) {
+                    window.elementSdk.init({
+                        defaultConfig,
+                        onConfigChange,
+                        mapToCapabilities,
+                        mapToEditPanelValues
+                    });
+                }
+
+                // Set up event listeners
+                document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
+                document.getElementById('cta-button').addEventListener('click', scrollToForm);
+
+            } catch (error) {
+                console.error("Failed to initialize application:", error);
+            }
+        }
+
+        // Start the application
+        initializeApp();
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c098d4d963824cb',t:'MTc2ODg1OTQ3MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
